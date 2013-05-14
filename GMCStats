@@ -1,0 +1,115 @@
+[Recode to make it so it resets after every round or game. Whenever we get the round system working]
+
+package Score.board;
+
+import java.io.File;
+import java.io.IOException;
+
+import org.bukkit.Bukkit;
+import org.bukkit.configuration.file.FileConfiguration;
+import org.bukkit.configuration.file.YamlConfiguration;
+import org.bukkit.entity.Player;
+import org.bukkit.event.EventHandler;
+import org.bukkit.event.Listener;
+import org.bukkit.event.entity.PlayerDeathEvent;
+import org.bukkit.event.player.PlayerJoinEvent;
+import org.bukkit.plugin.java.JavaPlugin;
+import org.bukkit.scoreboard.DisplaySlot;
+import org.bukkit.scoreboard.Objective;
+import org.bukkit.scoreboard.Score;
+import org.bukkit.scoreboard.Scoreboard;
+import org.bukkit.scoreboard.ScoreboardManager;
+
+public class Main extends JavaPlugin implements Listener{
+  public File config;
+	public FileConfiguration pConfig;
+	public void onEnable(){
+		getServer().getPluginManager().registerEvents(this, this);
+		 for(Player current : Bukkit.getOnlinePlayers()) {
+			 showScoreboard(current);
+	}
+}	
+	@EventHandler
+    public void onJoin(PlayerJoinEvent event) {
+        showScoreboard(event.getPlayer());
+    			config = new File("plugins/Scoreboard/config.yml");
+    			pConfig = YamlConfiguration.loadConfiguration(config);
+    			if(!config.exists()){
+    				pConfig.set(event.getPlayer().getName() + ".kills", "0");
+    				pConfig.set(event.getPlayer().getName() + ".deaths", "0");
+    				try {
+    						pConfig.save(config);
+    				} catch (IOException ex){ex.printStackTrace();}
+    			}
+    	}
+    
+	
+	public void showScoreboard(Player player){
+			ScoreboardManager manager = Bukkit.getScoreboardManager();
+				Scoreboard board = manager.getNewScoreboard();
+					Objective objective = board.registerNewObjective("Stats", "");
+					objective.setDisplaySlot(DisplaySlot.SIDEBAR);
+					objective.setDisplayName("Stats");
+	
+				Score kills = objective.getScore(Bukkit.getOfflinePlayer("§7Kills:§4"));
+				kills.setScore(getKills(player.getName()));
+	
+				Score deaths = objective.getScore(Bukkit.getOfflinePlayer("§7Deaths:§4"));
+				deaths.setScore(getDeaths(player.getName()));
+					player.setScoreboard(board);
+}
+	
+	@EventHandler
+		public void PlayerDeathEvent(PlayerDeathEvent event){
+			Player player = event.getEntity().getPlayer();
+
+				if (player.getKiller() instanceof Player){
+					Player killer = player.getKiller();
+					
+					setKills(killer, getKills(killer.getName()) + 1);
+					setDeaths(player, getDeaths(player.getName()) + 1);
+					
+						showScoreboard(killer);
+						showScoreboard(player);
+						
+				} else {
+						Player killer = player.getKiller();
+						getConfig().set(player.getName() + ".deaths", getDeaths(player.getName()) + 1);
+						getConfig().set(killer.getName() + ".kills", getKills(killer.getName()) + 1);
+						saveConfig();
+
+						showScoreboard(player);
+				}
+}
+	public int getKills(String player)
+	{
+			if(getConfig().get(player + ".kills") != null){
+					return getConfig().getInt(player + ".kills");
+			} else {
+					return 0;
+			}
+	}
+
+	public int getDeaths(String player)
+	{
+			return getConfig().getInt(player + ".deaths");
+	}
+	
+	public void setKills(Player player, int Kills)
+	{
+			getConfig().set(player.getName() + ".kills", Kills);
+			saveConfig();
+	}
+
+	public void setDeaths(Player player, int Deaths)
+	{
+			getConfig().set(player.getName() + ".deaths", Deaths);
+			saveConfig();
+	}
+	
+	
+	
+	public void onDisable(){
+		
+	}
+}
