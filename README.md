@@ -28,27 +28,27 @@
 -  -Layout-
 [Group:Player:Message]
 
-Total Scoreboard - (Not in game) Uses Scoreboard API
-     [Layout]
-Stats
-Locust game wins [maybe]
-COG game wins [maybe]
-Total Score - 
-Total Kills - 
-Total Deaths -  
+Total Scoreboard - (Not in game) Uses Scoreboard API <br>
+     [Layout]<br>
+Stats<br>
+Locust game wins [maybe] <br>
+COG game wins [maybe] <br>
+Total Score - <br>
+Total Kills - <br>
+Total Deaths -  <br>
 
 
-Round Scoreboard - (ingame) Uses Scoreboard API
-   [Layout]
-Stats
-Locust - [numberofroundswon]
-COG - [numberofroundswon]
-Round score - 
-Round Kills - 
-Round Deaths - 
+Round Scoreboard - (ingame) Uses Scoreboard API<br>
+   [Layout]<br>
+Stats <br>
+Locust - [numberofroundswon]<br>
+COG - [numberofroundswon]<br>
+Round score - <br>
+Round Kills - <br>
+Round Deaths - <br>
 
 -----------------
-Game types
+Game types<br>
 
 [Team Deathmatch]
 - Max 32 players
