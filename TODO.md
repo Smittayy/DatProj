@@ -23,18 +23,18 @@ Gives player armour pieces
 [Round Scoreboard - Not in game] /Uses Scoreboard API
      [Layout]
       Stats
-------------------
+
 Locust game wins [maybe]
 COG game wins [maybe]
 Total Score - 
 Total Kills - 
 Total Deaths -  
-------------------
+
 
 [Round Scoreboard - ingame] /Uses Scoreboard API
      [Layout]
       Stats
-------------------
+
 Locust - [numberofroundswon]
 COG - [numberofroundswon]
 Round score - 
@@ -42,7 +42,7 @@ Round Kills -
 Round Deaths - 
 
 
----Game types---
+Game types
 
 [Team Deathmatch]
 Max 32 players
@@ -53,17 +53,17 @@ Add score point system /Point system will allow players to buy items in the futu
 
 [Sub TDM Boomshots]
 Only boomshots for donators ONLY
----------------------------
+
 Execution [Team]
 Max of 5 rounds wins
 1 live each player
-----------------------------
+
 Free For All
 Every man for themselves
-----------------------------
+
 Guardian (Future)
 Unlimited lives unless Leader is dead.
 As soon as the leader dies everyone alive is on their last life.
-----------------------------
+
 
 Capture the flag (future)
