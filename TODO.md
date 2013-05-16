@@ -1,4 +1,3 @@
-Shit that we have to get done
 
 [Textures]
 Selected armour peices designed as COG or Locust
