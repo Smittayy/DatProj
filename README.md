@@ -28,29 +28,27 @@
 -  -Layout-
 [Group:Player:Message]
 
-[Round Scoreboard - (Not in game) Uses Scoreboard API
--     [Layout]
--     [Stats]
-
-- Locust game wins [maybe]
-- COG game wins [maybe]
-- Total Score - 
-- Total Kills - 
-- Total Deaths -  
-
-
-[Round Scoreboard - (ingame) Uses Scoreboard API
--     [Layout]
--     Stats
-
-- Locust - [numberofroundswon]
-- COG - [numberofroundswon]
-- Round score - 
-- Round Kills - 
-- Round Deaths - 
+Total Scoreboard - (Not in game) Uses Scoreboard API
+     [Layout]
+Stats
+Locust game wins [maybe]
+COG game wins [maybe]
+Total Score - 
+Total Kills - 
+Total Deaths -  
 
 
-[Game types]
+Round Scoreboard - (ingame) Uses Scoreboard API
+   [Layout]
+Stats
+Locust - [numberofroundswon]
+COG - [numberofroundswon]
+Round score - 
+Round Kills - 
+Round Deaths - 
+
+-----------------
+Game types
 
 [Team Deathmatch]
 - Max 32 players
