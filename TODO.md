@@ -1,4 +1,3 @@
-
 [Textures]
 Selected armour peices designed as COG or Locust.
 Selected items designed as Gnasher, Longshot, Lancer, Sawed-Off, Boomshot, Grenades, 
