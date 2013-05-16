@@ -13,7 +13,12 @@
 - Smoke
 
 [Maps]
+- Blood Drive 
+- River
+- Ruins
+- Ect
 - Arenas, each portal takes player to different map. In the future each portal has a bank of maps to choose from randomly
+
 [Team]
 - Locust - Red 
 - COG - Blue 
