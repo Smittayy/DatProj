@@ -4,10 +4,7 @@ Selected items designed as Gnasher, Longshot, Lancer, Sawed-Off, Boomshot, Grena
 Smoke, Torque Bow, Vulcan, Hammer of Dawn.
 
 [Maps]
-- Arenas
-Each portal takes player to different map
-
-Each portal has a bank of maps to choose from randomly [Future]
+- Arenas, each portal takes player to different map. In the future each portal has a bank of maps to choose from randomly
 - Team
 Locust - Red 
 COG - Blue 
