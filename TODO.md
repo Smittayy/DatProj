@@ -1,9 +1,8 @@
 
 [Textures]
-Selected armour peices designed as COG or Locust
-Selected items designed as 
-Gnasher, Longshot, Lancer, Sawed-Off, Boomshot, Grenades, 
-Smoke, Torque Bow, Vulcan, Hammer of Dawn
+Selected armour peices designed as COG or Locust.
+Selected items designed as Gnasher, Longshot, Lancer, Sawed-Off, Boomshot, Grenades, 
+Smoke, Torque Bow, Vulcan, Hammer of Dawn.
 
 [Maps]
 - Arenas
