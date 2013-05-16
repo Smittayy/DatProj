@@ -30,7 +30,7 @@
 
 [Round Scoreboard - Not in game] Uses Scoreboard API
 -     [Layout]
--      Stats
+-      [Stats]
 
 - Locust game wins [maybe]
 - COG game wins [maybe]
