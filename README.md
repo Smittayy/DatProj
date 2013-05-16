@@ -28,9 +28,9 @@
 -  -Layout-
 [Group:Player:Message]
 
-[Round Scoreboard - Not in game] Uses Scoreboard API
+[Round Scoreboard - (Not in game) Uses Scoreboard API
 -     [Layout]
--      [Stats]
+-     [Stats]
 
 - Locust game wins [maybe]
 - COG game wins [maybe]
@@ -39,9 +39,9 @@
 - Total Deaths -  
 
 
-[Round Scoreboard - ingame] Uses Scoreboard API
+[Round Scoreboard - (ingame) Uses Scoreboard API
 -     [Layout]
--      Stats
+-     Stats
 
 - Locust - [numberofroundswon]
 - COG - [numberofroundswon]
@@ -60,16 +60,20 @@
 
 
 [Sub TDM Boomshots]
--Only boomshots for donators ONLY
+- Max of 32 Players
+- Only boomshots for donators ONLY
 
 [Execution] -Team
--Max of 5 rounds wins
--1 live each player
+- Max of 20 Players
+- Max of 5 rounds wins
+- 1 live each player
 
 [Free For All]
+- Max of 15 Players
 - Every man for themselves
 
 [Guardian (Future)]
+- Max of 50 Players (We maybe change it)
 - Unlimited lives unless Leader is dead.
 - As soon as the leader dies everyone alive is on their last life.
 
