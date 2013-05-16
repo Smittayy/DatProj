@@ -5,14 +5,14 @@ Smoke, Torque Bow, Vulcan, Hammer of Dawn.
 
 [Maps]
 - Arenas, each portal takes player to different map. In the future each portal has a bank of maps to choose from randomly
-- Team
-Locust - Red 
-COG - Blue 
-/Could use scoreboard API with the /Team function but rather design our own team function
--Randomly assigns Locust or COG team upon entry of portal
--Assigns default gun, unless changed by player using command /gun
-/gun command brings up new inventory interface with the weapons shown in it
-Gives player armour pieces
+[Team]
+- Locust - Red 
+- COG - Blue 
+- Could use scoreboard API with the Team function but rather design our own team function
+- Randomly assigns Locust or COG team upon entry of portal
+- Assigns default gun, unless changed by player using command /gun
+- Gun command brings up new inventory interface with the weapons shown in it
+- Gives player armour pieces
 
 [Team Chat]
 - Team chat will only work if players are in a game
