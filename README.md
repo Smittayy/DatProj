@@ -4,11 +4,15 @@
 - Gnasher 
 - Longshot 
 - Lancer 
-- Sawed-Off 
-- Boomshot  
-- Torque Bow 
-- Vulcan
-- Hammer of Dawn
+- Hammer Burst
+- Retro Lancer /Donator maybe
+- Sawed-Off /Donator
+- Boomshot  /Donator
+- Torque Bow /Donator
+- Vulcan /Donator
+- Hammer of Dawn /Donator
+- Flame Thrower /Donator
+- Breech Shot /Donator
 - Grenades
 - Smoke
 
