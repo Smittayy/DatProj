@@ -1,4 +1,4 @@
---------------------------------------------Project Plan------------------------------------------
+--------------------------------------------Project Plan------------------------------------------<br>
 [Textures]
 - Selected armour peices designed as COG or Locust.
 - Selected items designed as 
